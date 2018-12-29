@@ -35,6 +35,7 @@ func main() {
 
         if resp.StatusCode == 200 {
             play(soundFile)
+	    fmt.Printf("StatusCode == 200 -> play Sound\n")
         } else {
             if resp.StatusCode == 204 {
 
